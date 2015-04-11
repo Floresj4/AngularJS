@@ -1,0 +1,12 @@
+body{
+	font-family: Verana, Arial, sans-serif;
+}
+
+div#main-container {
+	width:900px;
+	margin:0 auto;
+}
+
+li.user {
+	list-style: none;
+}
