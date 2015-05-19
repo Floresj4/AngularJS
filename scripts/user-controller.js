@@ -14,7 +14,8 @@ userControllers.controller('UserListCtrl', ['$scope', '$http', function($scope, 
 
 userControllers.controller('UserDetailCtrl', ['$scope', '$routeParams', '$http',
 	function($scope, $routeParams, $http) {
-		$http.get(rootUrl + "/users/" + $routeParams.userId).success(function(data) {
+		$http.get(rootUrl + "/users/" + $routeParams.userId)
+		.success(function(data) {
 			$scope.user = data;
 		});
 	}

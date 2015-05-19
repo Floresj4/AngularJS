@@ -8,7 +8,8 @@ var userApp = angular.module('UserApp', [
 
 userApp.config(['$routeProvider',
 	function($routeProvider) {
-		$routeProvider.when('/users', {
+		$routeProvider
+		.when('/users', {
 			templateUrl: 'partials/user-list.html',
 			controller: 'UserListCtrl'
 		})

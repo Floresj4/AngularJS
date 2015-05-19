@@ -4,9 +4,14 @@ body{
 
 div#main-container {
 	width:900px;
-	margin:0 auto;
+	margin:25px auto;
 }
 
 li.user {
 	list-style: none;
+}
+
+img.user-icon {
+	width:128px;
+	height:128px;
 }
