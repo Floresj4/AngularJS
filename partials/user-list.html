@@ -1,13 +1,20 @@
 <div id='main-container' class="panel panel-default">
 	<div class="panel-body">
-		
-		<h1>Users</h1>
-
-		<ul id='users'>
-			<li ng-repeat='user in users' class='user'>
-				<a href="#/users/{{user.id}}">{{user.firstname}} {{user.lastname}}</a>
-			</li>
-		</ul>		
+				
+		<table class='table table-hover'>
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat='user in users'>
+					<td><a href="#/users/{{user.id}}">{{user.firstname}}</a></td>
+					<td><a href="#/users/{{user.id}}">{{user.lastname}}</a></td>
+				</tr>
+			</tbody>
+		</table>
 		
 	</div>
 </div>
