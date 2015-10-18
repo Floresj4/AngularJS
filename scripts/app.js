@@ -9,7 +9,7 @@ var userApp = angular.module('UserApp', [
 userApp.config(['$routeProvider',
 	function($routeProvider) {
 		$routeProvider
-		.when('/users', {
+		.when('/users/', {
 			templateUrl: 'partials/user-list.html',
 			controller: 'UserListCtrl'
 		})
@@ -17,6 +17,6 @@ userApp.config(['$routeProvider',
 			templateUrl: 'partials/user-detail.html',
 			controller: 'UserDetailCtrl'
 		})
-		.otherwise({ redirectTo: '/users'});
+		.otherwise({ redirectTo: '/users/'});
 	}
 ]);
