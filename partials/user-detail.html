@@ -1,4 +1,10 @@
-<div id='main-container' class="panel panel-default">
+<script type='text/javascript'>
+	function presentBiography(data) {
+		console.log("making data pretty");
+	}
+</script>
+
+<div id='main-container' class="panel">
 	<div class="panel-body">
 
 		<div class='media-left media-middle'>
@@ -9,7 +15,12 @@
 		<div class='media-body'>
 			<h4 class='media-heading'>{{user.firstname}} {{user.lastname}}</h4>
 			<p>Birthdate: {{user.birthdate | date:'MM/dd/yyyy'}}</p>
-			<p>{{user.bio}}</p>
+			
+			<h2><small>Biography</small></h2>
+			
+			
+			<p style='white-space:pre-line;'>{{user.bio}}</p>
+			
 		</div>
 
 		<nav>

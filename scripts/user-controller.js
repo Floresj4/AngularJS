@@ -17,10 +17,14 @@ userControllers.controller('UserDetailCtrl',
 	function($scope, $routeParams, $http) {
 		$http.get(rootUrl + "/users/" + $routeParams.userId)
 		.success(function(data) {
+			presentBiography(data);
 			$scope.user = data;
 			
-			//$scope.user.birthdate = 
-				//Date.parse($scope.user.birthdate);
 		});
 	}
 ]);
+
+function presentBiography(data) {
+	var array = data.bio.split(" ");
+	console.log(array);
+}

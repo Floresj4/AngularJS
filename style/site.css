@@ -3,12 +3,19 @@ body{
 }
 
 div#main-container {
-	width:900px;
+	width:800px;
 	margin:25px auto;
 }
 
 li.user {
 	list-style: none;
+}
+
+.panel-footer .source-info {
+	font-size:10px !important;
+}
+.source-info a {
+	font-size:10px !important;
 }
 
 img.user-icon {
