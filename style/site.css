@@ -12,12 +12,32 @@ li.user {
 }
 
 .panel-footer .source-info {
+	padding-left:0;
 	font-size:10px !important;
 }
-.source-info a {
-	font-size:10px !important;
+.source-info li:first-child {
+	font-size:12px;
+	list-style:none;
+	margin-left:0;
 }
-
+.source-info li {
+	margin-left:15px;
+}
 img.user-icon {
 	width:256px;
+}
+
+.user-list { 
+	visibility: hidden;
+}
+
+.loading {
+	display:block;
+	width:126px;
+	margin:0 auto;
+}
+
+ul.user-info {
+	list-style: none;
+	padding-left:10px;
 }

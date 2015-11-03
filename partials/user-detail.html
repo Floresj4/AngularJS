@@ -14,7 +14,10 @@
 		</div>
 		<div class='media-body'>
 			<h4 class='media-heading'>{{user.firstname}} {{user.lastname}}</h4>
-			<p>Born: {{user.birthdate | date:'MM/dd/yyyy'}}</p>
+			<ul class='user-info'>
+				<li>Birth date: {{user.birthdate | date:'MM/dd/yyyy'}}</li>
+				<li>Department: {{user.department}}</li>
+			</ul>
 			
 			<h2><small>Biography</small></h2>
 			

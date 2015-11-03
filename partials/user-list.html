@@ -9,29 +9,36 @@
             </h1>
 		</div>
 
-		<table class='table table-hover'>
-			<thead>
-				<tr>
-					<th>First Name</th>
-					<th>Last Name</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr ng-repeat='user in users'>
-					<td><a href="#/users/{{user.id}}">{{user.firstname}}</a></td>
-					<td><a href="#/users/{{user.id}}">{{user.lastname}}</a></td>
-				</tr>
-			</tbody>
-		</table>
+		<div>
+			<img src='../images/loading.gif' class='loading' />
+		</div>
 		
-		<div class="panel-footer">
-			<p class='source-info'>
-				Information collected from
-				<ul>
-					<li><a href='http://www.haydenplanetarium.org/tyson/'>Hayden Planetarium</a></li>
-					<li><a href='http://www.imdb.com'>Internet Movie Database</a></li>
-				</ul>
-			</p>
+		<div class='user-list'>
+			<table class='table table-hover'>
+				<thead>
+					<tr>
+						<th>First Name</th>
+						<th>Last Name</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat='user in users'>
+						<td><a href="#/users/{{user.id}}">{{user.firstname}}</a></td>
+						<td><a href="#/users/{{user.id}}">{{user.lastname}}</a></td>
+						<td><a href="#/users/{{user.department}}">{{user.department}}</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="panel-footer">
+				<p class='source-info'>
+					Information collected from
+					<ul>
+						<li><a href='http://www.haydenplanetarium.org/tyson/'>Hayden Planetarium</a></li>
+						<li><a href='http://www.imdb.com'>Internet Movie Database</a></li>
+					</ul>
+				</p>
+			</div>
 		</div>
 	</div>
 </div>
