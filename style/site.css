@@ -11,9 +11,13 @@ li.user {
 	list-style: none;
 }
 
+.source-info,
+.source-links {
+	font-size:10px !important;
+}
+
 .panel-footer .source-info {
 	padding-left:0;
-	font-size:10px !important;
 }
 .source-info li:first-child {
 	font-size:12px;
@@ -23,6 +27,7 @@ li.user {
 .source-info li {
 	margin-left:15px;
 }
+
 img.user-icon {
 	width:256px;
 }
@@ -37,7 +42,35 @@ img.user-icon {
 	margin:0 auto;
 }
 
+.main-nav {
+	width:150px;
+	display: inline-block;
+	vertical-align: top;
+}
+.main-nav-home {
+	margin:0 auto;
+	display:block !important;
+	margin-top:50px;
+}
+
+.new-user-form,
+.user-list {
+	box-sizing: border-box;
+	padding-left:20px;
+	width:79%;
+	display: inline-block;
+}
+
 ul.user-info {
 	list-style: none;
 	padding-left:10px;
+}
+
+ul.about-links li {
+	display:inline-block;
+	list-style:none;
+	padding-right:10px;
+}
+ul.server-links a{
+	color:#B65D5D;
 }
