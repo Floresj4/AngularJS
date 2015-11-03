@@ -16,7 +16,7 @@ userControllers.controller('UserListCtrl',
 			  //remove loading and show table
 			  $('.loading').parent().detach();
 			  $('.user-list').css('visibility', 'visible');
-		  }, 500);
+		  }, 100);
 	});
 }]);
 
@@ -30,5 +30,10 @@ userControllers.controller('UserDetailCtrl',
 				$scope.user = data;
 		});
 	}
+]);
+
+userControllers.controller('NewUserCtrl',
+  ['$scope', '$http', function($scope, $http) {
+  }
 ]);
 
