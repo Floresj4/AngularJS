@@ -35,6 +35,6 @@ userApp.config(['$routeProvider',
 			templateUrl: 'partials/dept-list.html',
 			controller: 'DeptListCtrl'
 		})
-		.otherwise({ redirectTo: '/users/'});
+		.otherwise({ redirectTo: '/home/'});
 	}
 ]);
