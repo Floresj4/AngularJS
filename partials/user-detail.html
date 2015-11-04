@@ -1,6 +1,5 @@
 <div id='main-container' class="panel">
 	<div class="panel-body">
-
 		<div class="page-header">
 			<h1>AngularJS <kbd><acronym title="Representational State Transfer">REST</acronym></kbd> Client</h1>
 			<h1>
@@ -8,29 +7,28 @@
                 <small>{{user.firstname}} {{user.lastname}}</small>
             </h1>
 		</div>
-		
-		<div class='media-left'>
-			<a href="#">
-				<img class='media-object user-icon' src='./images/user_icon.png' alt='{{user.lastname}}' />
-			</a>
-		</div>
-		<div class='media-body'>
-			<ul class='user-info'>
-				<li>Birth date: {{user.birthdate | date:'MM/dd/yyyy'}}</li>
-				<li>Department: {{user.department}}</li>
-			</ul>
-			
-			<h2><small>Biography</small></h2>
+	</div>
+	
+	<div class='media-left'>
+		<a href="#">
+			<img class='media-object user-icon' src='./images/user_icon.png' alt='{{user.lastname}}' />
+		</a>
+	</div>
+	<div class='media-body'>
+		<ul class='user-info'>
+			<li>Birth date: {{user.birthdate | date:'MM/dd/yyyy'}}</li>
+			<li>Department: {{user.department}}</li>
+		</ul>
 
-			<p style='white-space:pre-line;'>{{user.bio}}</p>
+		<h2><small>Biography</small></h2>
 
-		</div>
-
-		<nav>
-			<ul class="pager">
-				<li><a href="#/{{user.link.rel}}">Back</a></li>
-			</ul>
-		</nav>
+		<p style='white-space:pre-line;'>{{user.bio}}</p>
 
 	</div>
+
+	<nav>
+		<ul class="pager">
+			<li><a href="#/{{user.link.rel}}">Back</a></li>
+		</ul>
+	</nav>
 </div>

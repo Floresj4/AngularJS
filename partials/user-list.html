@@ -1,6 +1,5 @@
 <div id='main-container' class="panel">
 	<div class="panel-body">
-		
 		<div class="page-header">
 			<h1>AngularJS <kbd><acronym title="Representational State Transfer">REST</acronym></kbd> Client</h1>
 			<h1>
@@ -8,44 +7,55 @@
                 <small>Users <span class="badge">{{users.length}}</span></small>
             </h1>
 		</div>
+	</div>
 
-		<div>
-			<img src='../images/loading.gif' class='loading' />
-		</div>
+	<div>
+		<img src='../images/loading.gif' class='loading' />
+	</div>
 		
-		<ul class="nav nav-pills nav-stacked main-nav">
-  			<li role="presentation" class="active"><a href="#/home/">Home</a></li>
-			<li role="presentation"><a href="#/users/">Users</a></li>
-		</ul>
+	<ul class="nav nav-pills nav-stacked main-nav">
+		<li role="presentation" class="active"><a href="#/home/">Home</a></li>
+		<li role="presentation" class="dropdown">
+			<a class="dropdown-toggle" 
+			   data-toggle="dropdown" 
+			   role="button" 
+			   aria-haspopup="true" 
+			   aria-expanded="false">
+				Users <span class="caret"></span>
+			</a>
+			<ul class="dropdown-menu">
+				<li role="presentation"><a href="#/new-user/">New User</a></li>
+			</ul>
+		</li>
+	</ul>
 		
-		<div class='user-list'>
-			<table class='table table-hover'>
-				<thead>
-					<tr>
-						<th>First Name</th>
-						<th>Last Name</th>
-						<th>Department</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr ng-repeat='user in users'>
-						<td><a href="#/users/{{user.id}}">{{user.firstname}}</a></td>
-						<td><a href="#/users/{{user.id}}">{{user.lastname}}</a></td>
-						<td><a href="#/users/{{user.department}}">{{user.department}}</a></td>
-					</tr>
-				</tbody>
-			</table>
+	<div class='user-list'>
+		<table class='table table-hover'>
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Department</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat='user in users'>
+					<td><a href="#/users/{{user.id}}">{{user.firstname}}</a></td>
+					<td><a href="#/users/{{user.id}}">{{user.lastname}}</a></td>
+					<td><a href="#/users/{{user.department}}">{{user.department}}</a></td>
+				</tr>
+			</tbody>
+		</table>
 
-			<div class="panel-footer">
-				<p class='source-info'>
-					Information collected from
-				</p>
-				<ul class='source-links'>
-					<li><a href='http://www.haydenplanetarium.org/tyson/'>Hayden Planetarium</a></li>
-					<li><a href='http://www.imdb.com'>Internet Movie Database</a></li>
-					<li style='list-style:none; text-indent:5px;'>and I made some of it up</li>
-				</ul>
-			</div>
+		<div class="panel-footer">
+			<p class='source-info'>
+				Information collected from
+			</p>
+			<ul class='source-links'>
+				<li><a href='http://www.haydenplanetarium.org/tyson/'>Hayden Planetarium</a></li>
+				<li><a href='http://www.imdb.com'>Internet Movie Database</a></li>
+				<li style='list-style:none; text-indent:5px;'>and I made some of it up</li>
+			</ul>
 		</div>
 	</div>
 </div>
